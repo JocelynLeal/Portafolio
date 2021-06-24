@@ -12,6 +12,7 @@
      body {
     font-family: Helvetica;
     margin: 0;
+    background-color: black;
   }
   
   a {
@@ -75,7 +76,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position:relative;
-    color:rgb(90, 90, 90);
+    color:rgb(255, 255, 255);
     text-align: center;
   }
 
@@ -109,6 +110,35 @@
         width: 100%;
       }
     }
+    @media screen and (max-width: 400px)
+    {
+      .header {
+        float:none;
+        width:100%;
+      }
+    }
+  @media screen and (max-width: 400px)
+  {
+  .contenedor {
+    float: none;
+      width: 100%;
+  }
+  }
+  
+  @media screen and (max-width:400px){
+    .footer{
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+    @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
 </style> 
 
   <div class="header">

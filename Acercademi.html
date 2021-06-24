@@ -9,6 +9,7 @@
 body {
     font-family: Helvetica;
     margin: 0;
+    background-color: black;
   }
   
   a {
@@ -21,7 +22,7 @@ body {
   .header {
     padding: 80px;
     text-align:center;
-    background: #666666;
+    background: #ffffff;
     color: #000000;
     opacity: 0.8;
     background-image:url(Josh3.jpg);  
@@ -37,6 +38,8 @@ body {
     margin:auto;
     font-size: 20px;
     text-align:center;
+    color:white;
+    background-color: black;
   }
   
   .header h1 {
@@ -46,14 +49,14 @@ body {
 
   .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(185, 185, 185);
   }
   
   
   .navbar a {
     float: left;
     display:block;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 30px;
     text-decoration: none;
@@ -61,13 +64,13 @@ body {
   
   
   .navbar a.right {
-    float: right;
+    float: center;
   }
   
   
   .navbar a:hover {
-    background-color: rgb(200, 200, 200);
-    color: black;
+    background-color: rgb(95, 95, 95);
+    color: rgb(255, 255, 255);
   }
  
   
@@ -124,7 +127,7 @@ body {
   .footer {
     padding: 10px;
     text-align: center;
-    background: #ddd;
+    background: rgb(255, 255, 255);
     width: 100%; 
 
   }
@@ -138,6 +141,35 @@ body {
       grid-template-columns: repeat(auto-fit,minmax(200px, 1fr))
     
     } 
+    @media screen and (max-width: 400px)
+    {
+      .header h1 {
+        float:none;
+        width:100%;
+      }
+    }
+  @media screen and (max-width: 400px)
+  {
+  .contenedor {
+    float: none;
+      width: 100%;
+  }
+  }
+  
+  @media screen and (max-width:400px){
+    .footer{
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+    @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
 
     .close{
       top:20px;
@@ -162,7 +194,7 @@ body {
   <a href="CV.html" class="right"> CV</a>
 </div>
 <div class="contenedor"> 
- <h1 style="font-size:50px"> Lic.Comunicación y periodismo </h1>
+ <h1 style="font-size:40px"> Lic.Comunicación y periodismo </h1>
   <p> Mi nombre es Jocelyn Leal Ruiz, estudié en la Facultad de Estudios Superiores Aragón,
      UNAM con especialidad en producción Televisiva. Me encanta la cinematografía, apreciar la 
      fotografía y recientemente me interesó el mundo de la programación, motivo por el cual me encuentro estudiando actualmente para ser desarrolladora web. </p>

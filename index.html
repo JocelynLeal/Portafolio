@@ -11,7 +11,9 @@
   <style> 
     body {
     font-family: Helvetica;
+    background-color: #000000;
     margin:0;
+    
   }  
   a {
       font-size: 25px;
@@ -20,7 +22,7 @@
   .header {
     padding: 80px;
     text-align:center;
-    background: #666666;
+    background: #444444;
     color: #000000;
     opacity: 0.8;
     background-image:url(portafolio1.jpg);
@@ -42,25 +44,28 @@
   }
   .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(185, 185, 185);
   }
   .navbar a {
     float: left;
     display:block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 10px 30px;
     text-decoration: none;
   }
   .navbar a.right {
-    float: right;
+    float:center;
   }
   .navbar a:hover {
-    background-color: rgb(200, 200, 200);
-    color: black;
+    background-color: rgb(131, 131, 131);
+    color: rgb(255, 255, 255);
   }
-  img {  width: 50%;
-    height:fit-content;}
+  img {  
+    border: 10px teal;
+    width: 50%;
+    padding:100px;
+ }
     /*
   img:hover {
     animation: shake 0.1s;
@@ -82,25 +87,43 @@
   .footer {
     padding:10 px;
     text-align: center;
-    background: #b1b1b1;
+    background: #ffffff;
     width: 100%; 
   }
   .footer img {
     width: 40px;
     padding:10px;
     }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 400px)
+    {
+      .header h1{
+        float:none;
+        width:100%;
+      }
+    }
+  @media screen and (max-width: 400px)
+  {
+  .contenedor {
+    float: none;
+      width: 100%;
+  }
+  }
+  
+  @media screen and (max-width:400px){
+    .footer{
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+    @media screen and (max-width: 400px) {
     .navbar a {
       float: none;
       width: 100%;
     }
   }
-  @media screen and (max-width: 400px) {
-    .galeria {
-      grid-template-columns: repeat(auto-fit,minmax(200px, 1fr))
-    
-    }
-} 
+ 
 </style>
   <div class="header">
     <h1> Portafolio</h1> 
@@ -113,7 +136,7 @@
 </div>
 <div class="contenedor">   
 <h1 style="font-size:70px"> Jocelyn Leal Ruiz </h1>
-<a target="_blank" href="Josh.jpg"> <img src="Josh.jpg">  </a>
+<a target="_blank" href="Josh.jpg"> <img src="Josh.jpg"></a>
 </div>
 
 <div class="footer">

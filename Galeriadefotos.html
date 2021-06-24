@@ -17,6 +17,7 @@
     body {
       font-family: Helvetica;
       margin: 0;
+      background-color: black;
     }
     a {
       font-size: 25px;
@@ -28,11 +29,11 @@
       text-align: center;
       padding: 20px 0;
       font-size: 40px;
-      color:rgb(0, 95, 102)
+      color:rgb(255, 255, 255)
     }
 
     .linea {
-      background: rgb(0, 95, 102);
+      background: rgb(50, 0, 56);
       height: 5px;
       width: 100%;
       display: block;
@@ -138,14 +139,14 @@
 
     .navbar {
       overflow: hidden;
-      background-color: #333;
+      background-color: rgb(185, 185, 185);
     }
 
 
     .navbar a {
       float: left;
       display: block;
-      color: white;
+      color: rgb(0, 0, 0);
       text-align: center;
       padding: 10px 30px;
       text-decoration: none;
@@ -158,8 +159,8 @@
 
 
     .navbar a:hover {
-      background-color: rgb(200, 200, 200);
-      color: black;
+      background-color: rgb(136, 136, 136);
+      color: rgb(255, 255, 255);
     }
 
 
@@ -182,6 +183,44 @@
       grid-template-columns: repeat(auto-fit,minmax(200px, 1fr))
     
     } 
+  }
+  @media screen and (max-width: 400px)
+    {
+      header {
+        float:none;
+        width:100%;
+      }
+    }
+    @media screen and (max-width: 400px) {
+    .body {
+      float: none;
+      width: 100%;
+    
+    } 
+  }
+  @media screen and (max-width: 400px)
+  {
+  .contenedor {
+    float: none;
+      width: 100%;
+  }
+  }
+  
+  @media screen and (max-width:400px){
+    .footer{
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+    @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+ 
 
     .close{
       top:20px;
@@ -191,7 +230,7 @@
         float: none;
         width: 100%;
       }
-    }
+    
   </style>
 </head>
 
@@ -278,6 +317,7 @@
  <h2> Retrato</h2>
   <div>
     <span class="linea"> </span>
+    
     <section class="galeria">
   <a href="#image1"><img src="Img Selección de fotos para Portafolio/Retratos/3.1.jpg" height="450px" width="350px"> </a>
   <a href="#image1"><img src="Img Selección de fotos para Portafolio/Retratos/3.2.jpg" height="400px" width="600px"> </a>

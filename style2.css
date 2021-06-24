@@ -1,51 +1,48 @@
-body{
-    background: #fffffa;
-    padding: 0;
-    margin:20px;
+body {
+    background: black;
+    padding: 2px;
+    margin: 30px;
 }
-
 header{
     width: 100%;
     height: 100%;
-    overflow:hidden;
-    background-image: url(..//Index/portafolio.jpg);
-    margin-bottom:10px;
+    overflow: hidden;
+    background-image: url(..//Index/portafolio1.jpg);
+    margin-top: 20px;
     text-align: right;
 }
-.wrapper{
-    width:90%;
-    max-width:1000px;
-    margin:auto;
+.wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
     overflow:hidden;
 }
-
 div header nav{
-    float:right;
-    line-height: 200px;
-    background:rgb(129, 0, 118);
+    float: left;
+    line-height: 100px;
+    background: crimson;
 }
 header nav a {
     display:inline-block;
-    color:#000000a2;
+    color:darkcyan;
     text-decoration:none;
-    padding:10px 20px;
-    line-height:normal;
-    font-size:20px;
-    font-weight:bold;
-    -webkit-transition:all 500ms ease ;
+    padding: 15px 15px;
+    line-height: normal;
+    font-size: 25px;
+    font-weight: lighter;
+    -webkit-transition:all 500ms ease;
     -o-transition:all 500ms ease; 
-    transition:all 500ms ease ;
+    transition:all 500ms ease;
 }
 header nav a:hover{
-    background:#0b2f4d;
-    border-radius:50px;
-
+    background: deeppink;
+    border-radius:40px;
 }
-
 div h1{
-    font-size: 100px;
-    color:#0b2f4d;
+    font-size:120px;
+    color:indigo;
     text-align: center;
+
 }
 @media screen and (max-width: 400px)
     {
